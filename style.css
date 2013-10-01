@@ -1,0 +1,106 @@
+body {
+	font-family: Arial,Lucida,Geneva,sans-serif;
+	
+	min-width: 1000px;	/* 1000px to take the video + the video recommedations width */
+}
+	
+	/* HEADER */
+	
+#pageHeader{
+	float: left; 
+	margin-left:33%;
+	margin-top:1em;
+	margin-bottom: 1em;
+}
+
+#searchBar{
+	width: 33%;
+	text-align: right;
+	float: right;
+	margin-top: 4em;
+	margin-right: 1em;
+}
+
+#searchBar #searchBarField {
+	width: 25em;
+}
+
+#topBar{	
+	background-color: #EEEEFF;
+	border: 1px solid #AAAAAA;
+	border-radius: 20px;
+	
+	overflow: auto;
+	padding-bottom: 1em;
+	}
+
+	
+	/* BODY */
+	
+#pageBody{
+	margin-top: 1em;
+}
+
+#relatedVideos{
+	width: 33%;
+	float: right;
+}
+
+#bodyContent{
+	max-width: 66%;
+	text-align: center;
+}
+
+#pageLyrics{
+	border : 1px solid #AAAAAA;
+	border-radius: 20px;
+	
+	padding-left: 1em;
+	margin: 1em 25% 0 25%;
+}
+
+
+	/* FOOTER */
+	
+#copyright{
+	background-color : #EEEEFF;
+	border: 1px solid #AAAAAA;
+	border-radius: 20px;
+	
+	width: 33%;
+	text-align: center;
+	padding: 1em;
+	margin-top : 2em;
+	margin-left : 33%;
+}
+
+.item{	
+	background-color: #DDDDFF;
+	border: 1px solid #AAAAAA;
+	border-radius: 20px;
+	
+	overflow: auto;
+	padding-bottom: 1em;
+	}
+
+.video-title{
+	padding-top:3em;
+	padding-left: 10em;
+	
+	}
+	
+.video-image{
+	float : left;
+	padding-left: 10px;
+	padding-top: 10px;
+	}	
+
+.item:hover{
+	background-color: #EEEEFF;
+}
+
+a {
+text-decoration: none;
+color: black;
+font-family : Arial;
+}

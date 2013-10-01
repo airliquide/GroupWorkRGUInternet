@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<title>Karaokyt</title>
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		
+		<script src="api.js"></script>
+		<script src="youtube.js"></script>
+		<script src="lyrics.js"></script>
+		
+	</head>
+	<body>
+		<section id="topBar">
+			<header id="pageHeader">	<!-- Bloc 1 (floating left). Header of the page, contains the logo. -->
+				<a href="#"><img src="./images/logo.png" alt="logo" title="The best solution for your karaoke needs!" /></a>
+			</header>
+			
+			<section id="searchBar">	<!-- Bloc 2 (floating right). The search bar. -->
+				<form id="searchform">
+					<input type="text" value="Search..." name="searchBar" id="searchBarField" />
+					<input type="submit" id="searchButton" value="Search" />
+				</form>
+			</section>
+		</section>
+		<div id="resultBody">
+		</div>
+		
+		<section id="pageBody">	<!-- Bloc 3 -->
+			<section id="relatedVideos">	<!-- Bloc 4 (floating right). Alternate versions and recommended videos. -->
+				<section id="alternativeVideos">	<!-- Bloc 4.1 - Alternate versions of the video (cover by another artist, live, etc.). -->
+					<h3>Alternate versions&nbsp;:</h3>
+					<section id = "alternativeResults">
+						<!-- Results here. -->
+					</section>
+				</section>
+				<section id="recommendedVideos">	<!-- Bloc 4.2 - YouTube's recommendations based on the current video. -->
+					<h3>Suggestions&nbsp;:</h3>
+					<section id = "recommendedResults">
+						<!-- Results here. -->
+					</section>
+				</section>
+			</section>
+			
+			<section id="bodyContent">	<!-- Bloc 5. Main video & associated lyrics. -->
+				<section id="pageVideo">	<!-- Bloc 5.1 - The main video. -->
+					
+					
+					<object id="YoutubeVideo" width= "425" height="344">
+						<param name="movie" value="http://www.youtube.com/v/8majjGwwDZY" />
+						<param name="allowFullScreen" value="false" />
+						<embed src="http://www.youtube.com/v/8majjGwwDZY" 
+							   type="application/x-shockwave-flash" 
+							   allowfullscreen="false" 
+							   width="425" 
+							   height="344"
+						>
+						</embed>
+					</object>
+
+					
+				</section>
+				<section id="pageLyrics">	<!-- Bloc 5.2 - The lyrics associated with the main video. -->
+					<p class="placeholder">Lorem ipsum dolor sit amet, <br />
+					consectetur adipiscing elit.<br />
+					Aliquam vitae purus id massa vulputate bibendum.  <br />
+					Integer orci lacus, iaculis in varius non,  <br />
+					placerat eu neque. Donec lacinia elit  <br />
+					eu risus laoreet a dictum ipsum accumsan. <br />
+					Nam dapibus dictum condimentum.  <br />
+					<br />
+					[CHORUS] <br />
+					Morbi ut enim quam.  <br />
+					Suspendisse pulvinar magna  <br />
+					imperdiet augue pharetra non imperdiet  <br />
+					eros posuere.  <br />
+					 <br />
+					Sed et libero felis. </p>
+				</section>
+			</section>
+		</section>
+	
+		<footer id="copyright" >	<!-- Bloc 6. Fake copyright thingy.-->
+			<p>&copy; KaraokYT - Group 3G, 2013</p>
+		</footer>
+	</body>
+</html>
